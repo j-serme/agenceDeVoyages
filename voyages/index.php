@@ -34,7 +34,7 @@ require_once "logique.php";
                     </li>
                     <li class="ms-3">
                         <?php if ($isLoggedIn == true) { ?>
-                            Bonjour <?= $_SESSION['username'] ?>
+                            Bonjour <?= $username ?>
                         <?php } ?>
                     </li>
                 </ul>

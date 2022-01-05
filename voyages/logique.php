@@ -79,6 +79,7 @@ foreach ($users as $user) {
 
         $isLoggedIn = true;
         $_SESSION['isLoggedIn'] = true;
+        $_SESSION['username'] = $user['username'];
     }
 }
 
@@ -86,3 +87,5 @@ foreach ($users as $user) {
 if (isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn']) {
     $isLoggedIn = true;
 }
+
+$username = $_SESSION['username'] ?? "";
